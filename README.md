@@ -2,7 +2,7 @@
 \
 Ein praxisnahes Datenbanksystem in **PostgreSQL** zur Verwaltung von Fahrradkomponenten, Lieferantenstrukturen und dynamischen Preishistorien.\
 \
-## \uc0\u55357 \u57056 \u65039  Tech Stack & Features\
+Tech Stack & Features\
 * **Datenbank:** PostgreSQL (v18)\
 * **Verwaltungstool:** DBeaver\
 * **Fortgeschrittene SQL-Konzepte:** Common Table Expressions (CTEs), Datenintegrit\'e4t via Foreign Keys & Constraints, Transaktionssicherheit (`START TRANSACTION`), Aggregationen.\
