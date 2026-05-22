@@ -7,13 +7,13 @@ Ein praxisnahes Datenbanksystem in **PostgreSQL** zur Verwaltung von Fahrradkomp
 * **Verwaltungstool:** DBeaver\
 * **Fortgeschrittene SQL-Konzepte:** Common Table Expressions (CTEs), Datenintegrit\'e4t via Foreign Keys & Constraints, Transaktionssicherheit (`START TRANSACTION`), Aggregationen.\
 \
-## \uc0\u55357 \u56522  Das Datenmodell (Schema)\
+Das Datenmodell (Schema)\
 Das System ist vollst\'e4ndig normalisiert und besteht aus drei Kernbereichen:\
 1. `suppliers`: Speichert Herkunft und Kontaktdaten der Lieferanten.\
 2. `components`: Enth\'e4lt die Bauteile (z.B. Bremssets, Groupsets) und deren aktuellen Lagerbestand.\
 3. `price_history`: Erm\'f6glicht eine l\'fcckenlose Verfolgung von Preis\'e4nderungen \'fcber die Zeit (wichtig f\'fcr historische Analysen).\
 \
-## \uc0\u55357 \u56960  Beispiel-Analyse (Lagerwert-Berechnung)\
+Beispiel-Analyse (Lagerwert-Berechnung)\
 Um den echten, aktuellen finanziellen Wert des Lagers zu ermitteln, nutzt das Projekt eine **Common Table Expression (CTE)**. Dadurch werden abgelaufene Preise gefiltert und nur aktuelle Angebote (wie das Disc Brakes Set f\'fcr 25,00 \'80) mit dem Bestand multipliziert:\
 \
 ```sql\
